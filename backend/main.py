@@ -4,6 +4,16 @@ import uvicorn
 import json
 
 app = FastAPI()
+app.title = "InterOperaTest"
+app.description = "A simple FastAPI application to serve dummy data and AI responses."
+app.version = "1.0.0"
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["localhost", "http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load dummy data
 with open("dummyData.json", "r") as f:
