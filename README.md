@@ -151,4 +151,10 @@ Using these free or trial options can help you add an AI chatbot or similar func
 
 ---
 
+## Additional Notes
+
+- To try the AI feature, you need to create `.env` file inside the backend directory following the `backend/.env.example` file. You have to fill the `LLM_API_KEY` with gemini API key from Google AI Studio. If you don't have one, please communicate to me so I could borrow you one!
+
+---
+
 **Good luck, and have fun building your Sales Dashboard!**
